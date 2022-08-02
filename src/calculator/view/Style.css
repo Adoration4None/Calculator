@@ -1,0 +1,59 @@
+
+.background {
+	-fx-background-color: #171A1F;
+} 
+
+.text-field {
+	-fx-background-color: #0D0F12;
+	-fx-text-fill: #A3C0C0;
+	-fx-font-weight: bold;
+}
+
+.label {
+	-fx-font-size: 18px; 
+	-fx-text-fill: #99999A;
+	-fx-opacity: 1.0;
+	
+}
+
+.button {
+	-fx-background-color: #0D0F12;
+	-fx-border-color: #171A1F;
+	-fx-border-width:1.5px;
+	-fx-text-fill: #A3C0C0;
+}
+
+.button:pressed {
+	-fx-background-color: #22917B;
+	-fx-text-fill: #0D0F12;
+}
+
+.default-button {
+	-fx-background-color: #22917B;
+	-fx-border-color: #171A1F;
+	-fx-text-fill: #0D0F12;
+}
+
+.default-button:hover {
+	-fx-background-color: #57C0AD;
+}
+
+.default-button:pressed {
+	-fx-background-color: #0D0F12;
+	-fx-text-fill: #22917B;
+}
+
+.combo-box-base {
+	-fx-background-color: #22917B;
+	
+}
+
+.combo-box:hover {
+	-fx-background-color: #57C0AD;
+}
+
+.combo-box:pressed {
+	-fx-background-color: #0D0F12;
+}
+
+

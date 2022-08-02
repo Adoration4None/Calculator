@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onKeyPressed="#keyPressedAction" prefHeight="621.0" prefWidth="464.0" styleClass="background" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.controller.AdvancedViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="117.0" layoutX="14.0" layoutY="15.0" stroke="#a3c0c0" strokeType="INSIDE" strokeWidth="2.0" width="434.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="461.0" layoutX="15.0" layoutY="144.0" stroke="#a3c0c0" strokeType="INSIDE" strokeWidth="2.0" width="434.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <GridPane layoutX="35.0" layoutY="204.0" prefHeight="247.0" prefWidth="292.0" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="0.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btn7" mnemonicParsing="false" onAction="#sevenAction" prefHeight="80.0" prefWidth="80.0" text="7" GridPane.columnIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn8" mnemonicParsing="false" onAction="#eightAction" prefHeight="80.0" prefWidth="80.0" text="8" GridPane.columnIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn9" mnemonicParsing="false" onAction="#nineAction" prefHeight="80.0" prefWidth="80.0" text="9" GridPane.columnIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnMultiplication" mnemonicParsing="false" onAction="#multiplicationAction" prefHeight="80.0" prefWidth="80.0" text="*" GridPane.columnIndex="4">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn4" mnemonicParsing="false" onAction="#fourAction" prefHeight="80.0" prefWidth="80.0" text="4" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn5" mnemonicParsing="false" onAction="#fiveAction" prefHeight="80.0" prefWidth="80.0" text="5" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn6" mnemonicParsing="false" onAction="#sixAction" prefHeight="80.0" prefWidth="80.0" text="6" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSubtraction" mnemonicParsing="false" onAction="#subtractionAction" prefHeight="80.0" prefWidth="80.0" text="-" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn1" mnemonicParsing="false" onAction="#oneAction" prefHeight="80.0" prefWidth="80.0" text="1" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn2" mnemonicParsing="false" onAction="#twoAction" prefHeight="80.0" prefWidth="80.0" text="2" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn3" mnemonicParsing="false" onAction="#threeAction" prefHeight="80.0" prefWidth="80.0" text="3" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAddition" mnemonicParsing="false" onAction="#additionAction" prefHeight="80.0" prefWidth="80.0" text="+" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnPoint" mnemonicParsing="false" onAction="#pointAction" prefHeight="62.0" prefWidth="79.0" text="." GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn0" mnemonicParsing="false" onAction="#zeroAction" prefHeight="62.0" prefWidth="79.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnModule" mnemonicParsing="false" onAction="#moduleAction" prefHeight="62.0" prefWidth="79.0" text="Mod" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEqual" defaultButton="true" mnemonicParsing="false" onAction="#equalAction" prefHeight="62.0" prefWidth="79.0" styleClass="default-button" text="=" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnRoot" layoutX="88.0" layoutY="10.0" mnemonicParsing="false" onAction="#rootAction" prefHeight="62.0" prefWidth="79.0" text="n√x">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnFactorial" layoutX="88.0" layoutY="72.0" mnemonicParsing="false" onAction="#factorialAction" prefHeight="80.0" prefWidth="80.0" text="!" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnPi" layoutX="88.0" layoutY="134.0" mnemonicParsing="false" onAction="#piAction" prefHeight="80.0" prefWidth="80.0" text="π" GridPane.rowIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEuler" layoutX="10.0" layoutY="134.0" mnemonicParsing="false" onAction="#eulerAction" prefHeight="80.0" prefWidth="80.0" text="e" GridPane.rowIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <ComboBox fx:id="cmbMode" layoutX="105.0" layoutY="82.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#modeAction" prefHeight="30.0" prefWidth="152.0" promptText="Advanced" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="82.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <Label layoutX="35.0" layoutY="86.0" prefHeight="30.0" prefWidth="56.0" text="Mode:" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="82.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgMode" fitHeight="37.0" fitWidth="45.0" layoutX="282.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="82.0">
+         <image>
+            <Image url="@../resources/images/calculating.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtScreen" alignment="CENTER_RIGHT" editable="false" layoutX="38.0" layoutY="25.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="37.0" prefWidth="292.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="35.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnDelete" contentDisplay="CENTER" layoutX="113.0" layoutY="284.0" mnemonicParsing="false" onAction="#deleteAction" prefHeight="61.0" prefWidth="158.0" text="Del" AnchorPane.bottomAnchor="276.0" AnchorPane.leftAnchor="113.0" AnchorPane.rightAnchor="193.0" AnchorPane.topAnchor="284.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnClear" layoutX="271.0" layoutY="284.0" mnemonicParsing="false" onAction="#clearAction" prefHeight="61.0" prefWidth="79.0" text="C" AnchorPane.bottomAnchor="276.0" AnchorPane.leftAnchor="271.0" AnchorPane.rightAnchor="114.0" AnchorPane.topAnchor="284.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDivision" layoutX="350.0" layoutY="264.0" mnemonicParsing="false" onAction="#divisionAction" prefHeight="61.0" prefWidth="79.0" text="/" AnchorPane.bottomAnchor="276.0" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="35.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPower" layoutX="35.0" layoutY="264.0" mnemonicParsing="false" onAction="#powerAction" prefHeight="61.0" prefWidth="78.0" text="^" AnchorPane.bottomAnchor="276.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="351.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <HBox layoutX="35.0" layoutY="222.0" prefHeight="62.0" prefWidth="394.0" AnchorPane.bottomAnchor="337.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0">
+         <children>
+            <Button fx:id="btnLog" mnemonicParsing="false" onAction="#logAction" prefHeight="61.0" prefWidth="78.0" text="lg">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnNaturalLog" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#naturalLogAction" prefHeight="61.0" prefWidth="79.0" text="ln">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSin" layoutX="88.0" layoutY="10.0" mnemonicParsing="false" onAction="#sinAction" prefHeight="61.0" prefWidth="79.0" text="Sin">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCos" layoutX="166.0" layoutY="10.0" mnemonicParsing="false" onAction="#cosAction" prefHeight="61.0" prefWidth="79.0" text="Cos">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnTan" layoutX="244.0" layoutY="10.0" mnemonicParsing="false" onAction="#tanAction" prefHeight="61.0" prefWidth="79.0" text="Tan">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="35.0" layoutY="160.0" prefHeight="62.0" prefWidth="394.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="160.0">
+         <children>
+            <Button fx:id="btnLess" mnemonicParsing="false" onAction="#lessAction" prefHeight="61.0" prefWidth="78.0" text="&lt;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnGreater" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#greaterAction" prefHeight="61.0" prefWidth="79.0" text="&gt;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnLessEqual" layoutX="88.0" layoutY="10.0" mnemonicParsing="false" onAction="#lessEqualAction" prefHeight="61.0" prefWidth="79.0" text="&lt;=">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnGreaterEqual" layoutX="166.0" layoutY="10.0" mnemonicParsing="false" onAction="#greaterEqualAction" prefHeight="61.0" prefWidth="79.0" text="&gt;=">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEquality" layoutX="244.0" layoutY="10.0" mnemonicParsing="false" onAction="#equalityAction" prefHeight="61.0" prefWidth="79.0" text="==">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
